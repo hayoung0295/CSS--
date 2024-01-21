@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+/* 전체 선택자 */
+/*
+    *{
+        color: orange;
+    }
+ */
+
+/* 태그 선택자 */
+h3{
+    color: blueviolet;
+}
+
+
+/* 클래스 선택자 */
+.class_selector{
+    background-color: #f90;
+}
+
+.hit{
+    color: #00f;
+}
+
+.select_ice{
+    color: mintcream;
+}
+
+.슈팅{
+    color: #f4563f;
+}
+
+/* 아이디 선택자 */
+#txt_id{
+    font-size: 20px;
+}
+
+#id_2{
+    color: darkcyan;
+}
+
+#car{
+    background-color: #faf;
+}
+
+/* 자식선택자 */
+.menu > li{
+    background-color: #ffa;
+}
+
+.menu > li > a{
+    background-color: #aff;
+}
+
+.menu > li > ul > li > a{
+    background-color: #ddd;
+}
+
+/* 자손선택자 */
+.menu a{
+    color: #fff;
+}
+
+.menu a.detail{
+    color: #f0f;
+}
