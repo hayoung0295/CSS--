@@ -157,14 +157,21 @@ a{text-decoration: none; color: #333;}
 
     /* 자식의 가로방향 배치 설정 */
     justify-content: center;
-    justify-content: flex-start;
+    /* justify-content: flex-start;
+    justify-content: end; */
 
+    /* 자식의 세로방향 배치 설정 */
+    align-items: center;
+    /* align-items: flex-start;
+    align-items: flex-end; */
 }
+
 #flex1 .item{
     width: 150px;
     height: 150px;
     background-color: #afa;
 }
+
 #flex1 .item:nth-child(2n){
     background-color: #faf;
 }
