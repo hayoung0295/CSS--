@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+*{}
+html, body{margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none; color: #333;}
+
+.float_left{
+    width: 100%;
+    height: 60px;
+    background-color: #ccc;
+    margin-bottom: 30px;
+}
+.float_left > ul{}
+.float_left > ul > li{
+    float: left;
+    background-color: #faa;
+    margin: 0 10px;
+    line-height: 60px;
+}
+
+.float_right{
+    width: 100%;
+    height: 60px;
+    background-color: #ccc;
+    margin-bottom: 30px;
+}
+.float_right > ul{}
+.float_right > ul > li{
+    float: right;
+    background-color: #faa;
+    margin: 0 10px;
+    line-height: 60px;
+}
+
+#adidas_header{
+    width: 100%;
+    /* height: 40px; */
+    background-color: #edefed;
+}
+#adidas_header:after{content: ""; display: block; clear: both;}
+
+#adidas_header .logo{float: left;}
+#adidas_header .logo a{}
+#adidas_header .logo a img{height: 40px;}
+
+#adidas_header nav{float: right;}
+#adidas_header nav > ul{}
+#adidas_header nav > ul > li{float: left; margin: 0 10px; line-height: 40px;}
+#adidas_header nav > ul > li > a{}
+
+
+/* display: block | inline | inline-block | none */
+
+#diplay{
+    padding: 20px 0;
+    background-color: #aff;
+    font-size: 0;
+}
+#diplay .img-box{
+    width: calc(25% - 20px);
+    height: 200px;
+    /* border: 0px dashed red;  */
+    border: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    display: inline-block;
+    margin: 0 10px;
+}
+#diplay .img-box.bg1{
+    background-image: url(../img/snoopy_01.png);
+    background-color: #faa;
+}
+#diplay .img-box.bg2{
+    background-image: url(../img/snoopy_02.png);
+    background-color: #ff0;
+}
+#diplay .img-box.bg3{
+    background-image: url(../img/snoopy_03.png);
+    background-color: #0ff;
+}
+#diplay .img-box.bg4{
+    background-image: url(../img/snoopy_04.png);
+    background-color: #0f0;
+}
+
+#display-center{
+    padding: 20px 0;
+    background-color: #f90;
+}
+#display-center .wrap{
+    /* width: 1000px;
+    margin: 0 auto; */
+    text-align: center;
+    font-size: 0;
+}
+#display-center .wrap .img-box{
+    width: 230px;
+    height: 200px;
+    /* border: 0px dashed red;  */
+    border: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    display: inline-block;
+    margin: 0 10px;
+}
+#display-center .wrap .img-box.bg1{
+    background-image: url(../img/snoopy_01.png);
+    background-color: #faa;
+}
+#display-center .wrap .img-box.bg2{
+    background-image: url(../img/snoopy_02.png);
+    background-color: #ff0;
+}
+#display-center .wrap .img-box.bg3{
+    background-image: url(../img/snoopy_03.png);
+    background-color: #0ff;
+}
+#display-center .wrap .img-box.bg4{
+    background-image: url(../img/snoopy_04.png);
+    background-color: #0f0;
+}
+
+
+#table-space{
+    width: 400px;
+    height: 300px;
+    background-image: url(../img/dog.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    display: table;
+}
+#table-space h4{
+    font-size: 24px;
+    /* text-align: center;
+    line-height: 300px; */
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+#flex1{
+    padding: 20px 0;
+    background-color: #4cf;
+    height: 300px;
+    display: flex;
+
+    flex-direction: column;
+    flex-direction: row; /* 기본값 */
+    /* flex-direction: row-reverse;
+    flex-direction: column-reverse; */
+
+    /* 자식의 가로방향 배치 설정 */
+    justify-content: center;
+    justify-content: flex-start;
+
+}
+#flex1 .item{
+    width: 150px;
+    height: 150px;
+    background-color: #afa;
+}
+#flex1 .item:nth-child(2n){
+    background-color: #faf;
+}
+
+
+
+
+
