@@ -67,4 +67,34 @@ body > div > p:nth-child(1){
 
 .ani_01 img{
     position: absolute;
+    width: 80px;
+    height: 80px;
+    animation: 10s ani_cart 1 linear;
+}
+
+@keyframes ani_cart {
+    0%{
+        left: 0;
+        transform: rotateY(0deg);
+    }
+    25%{
+        top: 0;
+        left: calc(100% - 80px);
+        transform: rotateY(0deg);
+    }
+    50%{
+        top: calc(100% - 80px);
+        left: calc(100% - 80px);
+        transform: rotateY(180deg);
+    }
+    75%{
+        top: calc(100% - 80px);
+        left: 0;
+        transform: rotateY(180deg);
+    }
+    100%{
+        top: 0;
+        left: 0;
+        transform: rotateY(0deg);
+    }
 }
